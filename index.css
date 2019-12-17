@@ -1,0 +1,374 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+https://raw.githubusercontent.com/LambdaSchool/responsive-web-design-I/master/img/logo.png
+
+https://img.src.ca/2012/07/23/635x357/120723_517a4_code-informatique-ecran_sn635.jpg
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+body {
+  height: auto;
+}
+
+.container-nav {
+  position: sticky;
+		top: 0;
+}
+
+nav {
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	width: 96.7%;
+	height: auto;
+	margin: 0 auto;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 15px 25px -28px black; /*box-shadow: 0 0 25px 0 black;*/
+	opacity: 95%;
+}
+
+ nav  a {
+	text-decoration: none;
+	color: lightslategray;
+	padding: 20px 30px 20px 30px;
+	width: auto;
+  height: auto;
+	font-size: 1.9rem;
+  transition: 0.1s;
+}
+
+nav a:hover {
+	background: lightslategray;
+	color: white;
+  box-shadow: 0px 25px 30px -10px green;
+  border-radius:  40px 0px 40px 0px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.logo {
+	padding: 10px 0px 20px 0px;
+	vertical-align: middle;
+	margin-left: 20px;  
+}
+
+.great-idea-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 82%;
+  margin: 50px auto 50px auto;
+  text-align: center;
+}
+
+.box{
+	width: 389px;
+	height: auto;
+	vertical-align: middle;
+}
+
+.great-idea-header h1 {
+	font-size: 9rem;
+  word-spacing: 200px;
+	margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+button {
+	width: 200px;
+	height: 50px;
+	margin-bottom: 35px;
+	font-size: 1.7rem;
+  transition: 0.4s;
+}
+
+button:hover {
+	background: lightslategray;
+	color: white;
+	cursor: pointer;
+  box-shadow: 0px 25px 30px -10px green;
+  border-radius: 5px;
+}
+
+header > img {
+	width: 400px;
+	height: 400px;
+	vertical-align: middle;
+  border-radius: 100%;  
+}
+
+hr {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}
+
+.top{
+	width: 45%;
+	height: auto;
+	text-align: left;
+	font-size: 2.1rem;
+	margin: 40px auto 40px auto;
+}
+
+.container-top {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 84%;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.middle-img {
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	width: 80%;
+}
+
+.bottom{
+	width: 33%;
+	height: auto;
+	text-align: left;
+	font-size: 2.1rem;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.container-bottom {
+	width: 80%;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-details {
+	font-size: 2rem;
+	width: 80%;
+	margin: 30px auto 0 auto;
+}
+
+footer {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+/* media queries */
+/*===============================================*/
+/* Great Idea Page max-width */
+/*================================================*/
+@media screen and (max-width: 989px) {
+	.logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+  }
+
+	nav {
+    padding: 70px 0 0 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .box h1{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2.4rem;
+    word-wrap: normal;    
+  }
+  
+  header > img {
+    width: 350px;
+    height: 350px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header img {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    padding: 70px 0 0 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+	nav a:hover {
+		background: lightslategray;
+		color: white;    
+    padding-bottom: 15px;
+  }	
+  
+  .box {
+    width: 50vw;
+  }  
+
+  .box h1{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 12.5vw;
+    word-wrap: normal;
+  }
+  
+  .middle-img {
+    height: 150px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .container-nav {
+    position: relative;
+  }
+
+  nav {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   box-shadow: 0 15px 25px -28px;
+  }
+
+  nav a {
+   width: 100%;
+   text-align: center;
+   font-size: 2.4rem;
+   box-shadow: 0 15px 25px -28px black;
+  }
+
+  nav a:hover {
+    background: lightslategray;
+    color: white;
+    border-radius:  100px 0px 100px 0px;
+    box-shadow: 0px 25px 30px -10px green;
+    width: 90%;
+  }
+  
+  .box {
+    width: 90vw;
+  }
+
+  .box h1{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 17vw;
+  }
+  
+  button {
+    font-size: 4.5vw;
+    width: 40vw;
+  }
+
+  .container-top, .container-bottom {
+     flex-direction: column;
+     margin: 0 auto;
+  }
+
+  .top, .bottom {
+     flex-direction: column;
+     align-items: center;
+     width: 95%;
+   }
+}
